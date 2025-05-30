@@ -48,7 +48,3 @@ node_modules/
 ehthumbs.db
 Thumbs.db
 
-# Project specific
-/data/weather/*.csv
-/data/weather/*.parquet
-!data/weather/capital_cities_weather.csv 
