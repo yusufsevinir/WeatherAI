@@ -30,7 +30,25 @@ Here are some screenshots demonstrating the WeatherAI web interface in action:
 ![Weather Data Chart for Amsterdam](weather_chart.png)
 *Visualize historical weather data for Amsterdam over the past 7 days in a chart, with options to view temperature, humidity, wind, and pressure.*
 
-## Installation
+## Project Structure
+
+```
+WeatherAI/
+├── backend/          # Backend service (FastAPI)
+└── frontend/         # Frontend application (coming soon)
+```
+
+## Getting Started
+
+This project consists of two main components:
+
+1. **Backend Service**: A FastAPI-based service that handles weather data processing, AI/ML predictions, and API endpoints.
+   - See [Backend README](backend/README.md) for detailed setup and usage instructions.
+
+2. **Frontend Application**: A web interface for interacting with the weather agent.
+   - See [Frontend README](frontend/README.md) for detailed setup and usage instructions.
+
+## Quick Start
 
 1. Clone the repository:
 ```bash
@@ -38,97 +56,7 @@ git clone https://github.com/yusufsevinir/WeatherAI.git
 cd WeatherAI
 ```
 
-2. Create a virtual environment and activate it:
-```bash
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-```
-
-3. Install dependencies:
-```bash
-pip install -r requirements.txt
-```
-
-4. Create a `.env` file in the root directory and add your API keys:
-```
-OPENWEATHER_API_KEY=your_api_key_here
-OPENROUTER_API_KEY=your_api_key_here
-```
-
-## Usage
-
-1. Start the server:
-```bash
-uvicorn app.main:app --reload
-```
-
-2. Open your browser and navigate to `http://localhost:8000`
-
-3. Use the web interface or API endpoints to interact with the weather agent
-
-## API Endpoints
-
-- `GET /api/weather/current` - Get current weather for a specific city
-  - Query Parameters:
-    - `city` (required): City name
-    - `country` (optional): Country name
-
-- `GET /api/weather/historical` - Get historical weather data
-  - Query Parameters:
-    - `city` (required): City name
-    - `country` (optional): Country name
-    - `start_date` (optional): Start date (YYYY-MM-DD)
-    - `end_date` (optional): End date (YYYY-MM-DD)
-
-- `POST /api/weather/analyze` - Analyze weather data based on natural language query
-  - Request Body:
-    ```json
-    {
-      "query": "string",
-      "city": "string (optional)",
-      "format": "string (optional)",
-      "days": "integer (optional)"
-    }
-    ```
-
-- `GET /api/sample-queries` - Get dynamically generated sample queries
-
-## Example Queries
-
-- "What's the current weather in London?"
-- "Show me the weather in Tokyo for the past 7 days"
-- "What's the temperature going to be in Paris this week?"
-- "Show me the precipitation forecast for New York as a chart"
-
-## Project Structure
-
-```
-WeatherAI/
-├── backend/
-│   ├── app/
-│   │   ├── api/
-│   │   │   └── routes.py
-│   │   ├── core/
-│   │   │   └── config.py
-│   │   ├── models/
-│   │   │   └── weather.py
-│   │   ├── services/
-│   │   │   └── weather_service.py
-│   │   ├── utils/
-│   │   │   ├── data_loader.py
-│   │   │   ├── nlp_parser.py
-│   │   │   └── open_weather_api.py
-│   │   └── main.py
-│   ├── data/
-│   │   └── weather/
-│   ├── scripts/
-│   └── requirements.txt
-├── frontend/
-│   ├── src/
-│   ├── public/
-│   └── package.json
-└── README.md
-```
+2. Follow the setup instructions in the [Backend README](backend/README.md) to get started with the backend service.
 
 ## Contributing
 
