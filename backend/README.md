@@ -128,7 +128,11 @@ The backend includes a script that generates CSV files containing weather data. 
    ```
 4. Set up your environment variables:
    - Create a `.env` file in the root directory
-   - Add necessary configuration variables
+   - Add the following API keys:
+     ```
+     OPENWEATHER_API_KEY=your_openweather_api_key_here
+     OPENROUTER_API_KEY=your_openrouter_api_key_here
+     ```
 
 ### Running the Application
 
@@ -144,12 +148,3 @@ The API will be available at `http://localhost:8000`
 Once the server is running, you can access:
 - Interactive API documentation: `http://localhost:8000/docs`
 - Alternative API documentation: `http://localhost:8000/redoc`
-
-## 🔧 Configuration
-
-The application uses environment variables for configuration. Create a `.env` file with the following variables:
-
-```
-# Add your configuration variables here
-```
-
