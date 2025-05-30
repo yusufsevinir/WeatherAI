@@ -11,6 +11,25 @@ An AI-powered weather agent that provides intelligent weather forecasts and resp
 - Support for multiple cities
 - Interactive web interface
 
+## Screenshots
+
+Here are some screenshots demonstrating the WeatherAI web interface in action:
+
+### 1. Current Weather Query
+
+![Current Weather in Paris](screenshot1.png)
+*The app displays the current weather in Paris, including temperature, humidity, wind, and pressure.*
+
+### 2. Historical Weather Data Table
+
+![Historical Weather Data for Paris](screenshot2.png)
+*View historical weather data for Paris over the past 3 days in a detailed table format.*
+
+### 3. Weather Data Chart
+
+![Weather Data Chart for Amsterdam](screenshot3.png)
+*Visualize historical weather data for Amsterdam over the past 7 days in a chart, with options to view temperature, humidity, wind, and pressure.*
+
 ## Installation
 
 1. Clone the repository:
